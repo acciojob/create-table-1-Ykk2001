@@ -1,16 +1,13 @@
 let sampleTable = document.getElementById("sampleTable");
-function insert_Row() {
+ function insert_Row() {
         //creation of the new row
-        let newRow = document.createElement("tr");
+        let newRow = sampleTable.insertRow(0)
         //created two td ele
-        let td1 = document.createElement("td");
-        let td2 = document.createElement("td");
+        let cell1=newRow.insertCell(0)
+        let cell2=newRow.insertCell(1);
         //added inner text into them
-        td1.innerText = "New Cell1";
-        td2.innerText = "New Cell2";
-        //inserted that td inside the newRow
-        newRow.appendChild(td1);
-        newRow.appendChild(td2);
-        //new row inserted before the first child
-        sampleTable.insertBefore(newRow, sampleTable.firstElementChild);
+        cell1.innerText = "New Cell1";
+        cell2.innerText = "New Cell2";
+        
       }
+        
