@@ -12,5 +12,5 @@ function insert_Row() {
         newRow.appendChild(td1);
         newRow.appendChild(td2);
         //new row inserted before the first child
-        sampleTable.insertBefore(newRow, sampleTable.firstChild);
+        sampleTable.insertBefore(newRow, sampleTable.firstElementChild);
       }
